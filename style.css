@@ -165,6 +165,14 @@ input:hover{
         height: 10%;
     }
 } */
+
+/* Small devices landscape*/
+@media (min-width: 300px) and (orientation: landscape){
+    .contenedor-principal{
+        height: 90em;
+    }
+}
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
 }
@@ -215,7 +223,7 @@ input:hover{
 @media only screen and (min-width: 1200px) {
     .contenedor-principal{
         width: 75%;
-        height: 40em;
+        height: 45em;
         margin-top: 5%;
     }
     .contenedor{
@@ -239,11 +247,5 @@ input:hover{
         margin-top: 50%;
         width: 70%;
         height: 10%;
-    }
-}
-
-@media (min-width: 300px) and (orientation: landscape){
-    .contenedor-principal{
-        height: 100em;
     }
 }
