@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@500;600;700&family=Flamenco&family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@500;600;700&family=Big+Shoulders+Display:wght@700&family=Flamenco&display=swap');
+
+body{
+    margin: 0;
+}
+
+.contenedor-principal{
+    width: 70%;
+    height: 150vh;
+    margin: 10% auto;
+    border-radius: 10px;
+    font-family: 'Big Shoulders Display';
+}
+.contenedor{
+    width: 100%;
+    height: 33.3%;
+    display: flex;
+}
+.sedans{
+    background: hsl(31, 77%, 52%);
+    border-radius: 10px 10px 0 0;
+}
+.suvs{
+    background: hsl(184, 100%, 22%);
+}
+.luxury{
+    background: hsl(179, 100%, 13%);
+    border-radius: 0 0 10px 10px;
+}
+.contenedor-general{
+    width: 70%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 10%;
+}
+img{
+    width: 25%;
+    height: 10%;
+}
+h2{
+    color: white;
+    font-size: 200%;
+}
+p{
+    color:hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca';
+    font-size: 70%;
+    text-align: left;
+    line-height: 1.8;
+    margin-top: 0;
+    height: 35%;
+}
+input{
+    border-radius: 50px;
+    border: none;
+    width: 60%;
+    height: 12%;
+    margin-top: 5%;
+    background: hsl(0, 0%, 95%);
+    font-family: 'Lexend Deca';
+}
+input:hover{
+    background: none;
+    border: solid 2px white;
+    cursor: pointer;
+}
+.sedans input{
+    color: hsl(31, 77%, 52%);
+}
+.sedans input:hover{
+    color: white;
+}
+.suvs input{
+    color: hsl(184, 100%, 22%);
+}
+.suvs input:hover{
+    color:white
+}
+.luxury input{
+    color: hsl(179, 100%, 13%);
+}
+.luxury input:hover{
+    color:white
+}
+
+
+/* INICIO MEDIA QUERY */
+@media (orientation:landscape){
+    .contenedor-principal{
+        height: 80em;
+    }
+}
+@media (min-width: 424px){
+    .contenedor-general{
+        margin-top: 5%;
+    }
+}
+@media (min-width: 767px){
+    .contenedor-principal{
+        width: 45%;
+        height: 150vh;
+    }    
+}
+@media (min-width: 1023px){
+    .contenedor-principal{
+        width: 75%;
+        height: 27em;
+        display: flex;
+        flex-direction: row;
+    }
+    .contenedor{
+        width: 25%;
+        height: 90%;
+    }
+    .contenedor-general{
+        width: 60%;
+        height: 90%;
+        margin: auto;
+    }
+    .sedans{
+        border-radius: 10px 0 0 10px;
+    }
+    img{
+        width: 23%;
+        height: 7%;
+    }
+    input{
+        margin-top: 50%;
+        width: 90%;
+        height: 10%;
+    }
+    .luxury{
+        border-radius: 0 10px 10px 0;
+    }
+}
+@media (min-width: 1439px){
+    .contenedor-principal{
+        width: 75%;
+        height: 40em;
+        margin-top: 5%;
+    }
+    .contenedor{
+        width: 25%;
+        height: 90%;
+    }
+    .contenedor-general{
+        width: 70%;
+        height: 85%;
+        margin-top: 15%;
+    }
+    h2{
+        font-size: 250%;
+    }
+    p{
+        width: 80%;
+        height: 35%;
+        font-size: 100%;
+    }
+    input{
+        margin-top: 50%;
+        width: 70%;
+        height: 10%;
+    }
+}
